@@ -99,7 +99,7 @@ extraSecretNamesForEnvFrom: []
 ## namespaces.
 rbac:
   buildNamespaces:
-    - drone-ns
+    - drone-space
 
 ## If you require annotations on the drone-runner-kube service account declare them here.
 serviceAccount:
@@ -132,4 +132,4 @@ env:
   ## Determines the default Kubernetes namespace for Drone builds to run in.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-namespace-default/
   ##
-  DRONE_NAMESPACE_DEFAULT: drone-ns
+  DRONE_NAMESPACE_DEFAULT: drone-space
